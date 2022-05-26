@@ -6,10 +6,6 @@ pip install -r req.txt
 python manage.py runserver
 ```
 
-## create app
-
-python manage.py startapp "folder name"
-
 ## add filed database table
 
 python manage.py makemigrations
@@ -18,7 +14,7 @@ python manage.py makemigrations
 
 python manage.py migrate
 
-## shell
+## python shell
 
 from articles.models import Article
 
@@ -32,6 +28,10 @@ article2.title = "Django Rules"
 ## save
 article3.save()
 ```
+
+## create app
+
+python manage.py startapp "folder name"
 
 ## to make change in setting eff
 
