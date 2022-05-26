@@ -6,6 +6,9 @@ pip install -r req.txt
 python manage.py runserver
 ```
 
+admin accound : ngounse
+passwd : 123
+
 ## add filed database table
 
 python manage.py makemigrations
