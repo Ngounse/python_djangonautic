@@ -6,7 +6,7 @@ pip install -r req.txt
 python manage.py runserver
 ```
 
-admin accound : ngounse
+admin account : ngounse
 passwd : 123
 
 ## add filed database table
