@@ -36,7 +36,7 @@ article3.save()
 
 python manage.py startapp "folder name"
 
-## to make change in setting eff
+## to make change in setting effect
 
 ```base
 python manage.py collectstatic
