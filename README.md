@@ -1,12 +1,12 @@
 # run django
 
 ```base
-cd djangonautic/
-pip install -r req.txt
-python manage.py runserver
+# cd djangonautic/
+# pip install -r req.txt
+# python manage.py runserver
 ```
 
-admin accound : ngounse
+admin account : ngounse
 passwd : 123
 
 ## add filed database table
@@ -36,7 +36,7 @@ article3.save()
 
 python manage.py startapp "folder name"
 
-## to make change in setting eff
+## to make change in setting effect
 
 ```base
 python manage.py collectstatic

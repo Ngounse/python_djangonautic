@@ -21,12 +21,16 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.static import static
 from django.conf import settings
 from articles import views as article_view
+from django.views.decorators.csrf import csrf_exempt
+
+from graphene_django.views import GraphQLView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
     path('articles/', include('articles.urls')),
     path('about/', views.about),
+    path("graphql/", csrf_exempt(GraphQLView.as_view(graphiql=True))),
     path('', article_view.article_list, name="home")
 ]
 
