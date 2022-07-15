@@ -17,7 +17,7 @@ class IngredientType(DjangoObjectType):
 class ArticleType(DjangoObjectType):
     class Meta:
         model = Article
-        fields = ("id", "title", "slug", "body", "date", "thumb", "author" )
+        fields = ("id", "title", "slug", "body", "date", "thumb" )
 
 
 class Query(graphene.ObjectType):
@@ -37,7 +37,7 @@ class Query(graphene.ObjectType):
             return None
 
     def resolve_all_articles(root, info):
-        return Article.objects.all()
+        return Article.objects.select_related("author").all()
 
     def resolve_article_by_title(root, info, title):
         try:

@@ -1,9 +1,9 @@
 # run django
 
 ```base
-cd djangonautic/
-pip install -r req.txt
-python manage.py runserver
+# cd djangonautic/
+# pip install -r req.txt
+# python manage.py runserver
 ```
 
 admin account : ngounse
